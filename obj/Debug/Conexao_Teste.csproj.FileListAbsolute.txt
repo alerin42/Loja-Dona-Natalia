@@ -1,0 +1,12 @@
+D:\VSzada\Conexao_Teste\bin\Debug\Conexao_Teste.exe.config
+D:\VSzada\Conexao_Teste\bin\Debug\Conexao_Teste.exe
+D:\VSzada\Conexao_Teste\bin\Debug\Conexao_Teste.pdb
+D:\VSzada\Conexao_Teste\obj\Debug\Conexao_Teste.csprojAssemblyReference.cache
+D:\VSzada\Conexao_Teste\obj\Debug\Conexao_Teste.Properties.Resources.resources
+D:\VSzada\Conexao_Teste\obj\Debug\Conexao_Teste.csproj.GenerateResource.cache
+D:\VSzada\Conexao_Teste\obj\Debug\Conexao_Teste.exe
+D:\VSzada\Conexao_Teste\obj\Debug\Conexao_Teste.pdb
+D:\VSzada\Conexao_Teste\bin\Debug\MySql.Data.dll
+D:\VSzada\Conexao_Teste\obj\Debug\Conexao_Teste.csproj.CopyComplete
+D:\VSzada\Conexao_Teste\obj\Debug\Interface.Form1.resources
+D:\VSzada\Conexao_Teste\bin\Debug\Ubiety.Dns.Core.dll
