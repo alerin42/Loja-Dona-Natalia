@@ -13,8 +13,8 @@ namespace Interface
 {
     public partial class Form1 : Form
     {
-       
-        
+
+
             public Form1()
             {
                 InitializeComponent();
@@ -46,7 +46,7 @@ namespace Interface
                 CboxCor.Items.Add("Vermelho");
 
             }
-
+            //Conexão com banco de dados MYSQL
             private void button1_Click(object sender, EventArgs e)
             {
                 try
