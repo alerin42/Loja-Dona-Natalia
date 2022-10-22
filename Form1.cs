@@ -70,7 +70,8 @@ namespace Interface
                 objecon.Open();
 
                 //Comando SQL de inserção
-                MySqlCommand objcomm = new MySqlCommand("insert into roupas ( cod_roupas , modelo , tamanho , cor , qtd ) values (notnull , ? , ? , ? , ? );", objecon);
+                MySqlCommand objcomm = new MySqlCommand("insert into roupas ( cod_roupas , modelo , tamanho , cor , qtd ) values ( 0 , ? , ? , ? , ? );", objecon);
+                
 
                 //Parametros do comando SQL
                 objcomm.Parameters.Add("@modelo ", MySqlDbType.VarChar, 20).Value = CboxModelo.SelectedItem.ToString();
@@ -78,7 +79,7 @@ namespace Interface
                 objcomm.Parameters.Add("@cor ", MySqlDbType.VarChar, 20).Value = CboxCor.SelectedItem.ToString();
                 objcomm.Parameters.Add("@qtd", MySqlDbType.VarChar, 5).Value = txtQtd.Text;
 
-                //comando para executar a querry
+                //comando para executar a query
                 objcomm.ExecuteNonQuery();
 
                 NewMethod();
@@ -102,11 +103,10 @@ namespace Interface
                 //Botao remover
                 try
                 {
-                    MySqlConnection objecon = new MySqlConnection("server=localhost; port=3307; User Id=root; database=lojaDN; password=usbw");
+                    MySqlConnection objecon = new MySqlConnection("server=localhost; port=3306; User Id=root; database=lojaDN; password=root");
                     objecon.Open();
                     //Comandos SQL com os paramêtros
                     MySqlCommand objcomm = new MySqlCommand("delete from roupas where cod_roupas = ? ", objecon);
-                    objcomm.Parameters.Clear();
                     objcomm.Parameters.Add("@id", MySqlDbType.Int32).Value = txtCod.Text;
 
                     //Executa a query
@@ -129,8 +129,9 @@ namespace Interface
                 try
                 {
 
-                    MySqlConnection objecon = new MySqlConnection("server=localhost; port=3307; User Id=root; database=lojinha; password=usbw");
-                    objecon.Open();
+                MySqlConnection objecon = new MySqlConnection("server=localhost; port=3306; User Id=root; database=lojinha; password=root");
+                MySqlCommand objcomm = new MySqlCommand("select * from roupas", objecon);
+                objecon.Open();
 
                 }
                 catch (Exception erro)
